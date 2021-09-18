@@ -7,11 +7,9 @@ var path = require('path');
 var koaBody = require('koa-body');
 var Koa = require('koa2');
 
-
 var app = new Koa();
 var port = process.env.PORT || '8100';
 
-var uploadHost= `http://localhost:${port}/uploads/`;
 
 app.use(koaBody({
     formidable: {
@@ -25,7 +23,6 @@ app.use(koaBody({
 app.use(koaStatic(
     path.resolve(__dirname, '../static')
 ));
-
 
 
 //跨域处理
