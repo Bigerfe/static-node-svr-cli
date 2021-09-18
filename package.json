@@ -1,8 +1,11 @@
 {
   "name": "static-node-svr-cli",
-  "version": "1.0.0",
+  "version": "1.0.11",
   "description": "",
-  "main": "index.js",
+  "main": "./bin/index.js",
+  "bin": {
+    "ffserver": "./bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +18,17 @@
   "bugs": {
     "url": "https://github.com/Bigerfe/static-node-svr-cli/issues"
   },
-  "homepage": "https://github.com/Bigerfe/static-node-svr-cli#readme"
+  "homepage": "https://github.com/Bigerfe/static-node-svr-cli#readme",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "koa": "^2.8.2",
+    "koa-better-body": "^3.1.2",
+    "koa-body": "^4.1.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-static": "^5.0.0",
+    "koa2": "^2.0.0-alpha.7",
+    "openurl": "^1.1.1"
+  }
 }
